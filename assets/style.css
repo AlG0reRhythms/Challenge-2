@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+nav {
+    background-color: rgb(62, 97, 160);
+    color:rgba(243, 227, 193, 0.953);
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+body {
+    background-color: rgba(62, 96, 160, 0.843);;
+}
+
+nav a {
+    padding: 18px;
+}
+nav a:visited{
+    color: rgba(243, 227, 193, 0.953);
+}
+
+li {
+    display: inline;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90px;
+
+}
+
+h2 {
+    text-align: center;
+}
