@@ -1,41 +1,70 @@
+:root{
+    --link-color: blue  
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Josefin Sans",sans-serif;
 }
 
-nav {
-    background-color: rgb(62, 97, 160);
-    color:rgba(243, 227, 193, 0.953);
-    line-height: 45px;
+header {
+    color: rgb(254, 254, 254);
+    background-color: rgb(60, 95, 80);
+    position: fixed;
+    width: 100%;
+}
+
+.primary-container {
+    width: auto;
+    max-height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover{
+background-color: black;
+}
+
+h1 {
     text-align: center;
-    font-size: 16px;
-}
-body {
-    background-color: rgba(62, 96, 160, 0.843);;
 }
 
-nav a {
-    padding: 18px;
-}
-nav a:visited{
-    color: rgba(243, 227, 193, 0.953);
+.bio-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+    border-radius: 90px;
 }
 
-li {
-    display: inline;
+.even-columns {
+    flex: 1 1 0;
+    margin-top: 200px;
 }
 
 img {
     display: block;
-    width: 150px;
-    height: 150px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 90px;
-
+    width: 25%;
 }
 
-h2 {
-    text-align: center;
+.container{
+    display: flex;
 }
