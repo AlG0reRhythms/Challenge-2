@@ -1,70 +1,120 @@
-:root{
-    --link-color: blue  
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Josefin Sans",sans-serif;
-}
-
-header {
-    color: rgb(254, 254, 254);
-    background-color: rgb(60, 95, 80);
-    position: fixed;
-    width: 100%;
-}
-
-.primary-container {
+*{
+    margin:0;
+    padding:0;
     width: auto;
-    max-height: 50px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
 }
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(55, 92, 69);
+    position: fixed;
+}
+
 
 .nav-list {
     display: flex;
-    justify-content: center;
-    gap: 15rem;
-    margin: 0;
-    padding: 20px;
+    flex: 1 1 0;
+    flex-wrap: wrap;
     list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+    top: 15px;
 }
 
-a {
-    text-decoration: none;
+.nav-list a:hover{
+    background-color: black;
 }
 
-a:visited {
-    color: white;
-}
-
-a:hover{
-background-color: black;
+main {
+    background-color: rgb(233, 198, 152);
 }
 
 h1 {
     text-align: center;
+    font-size: 40px;
 }
 
-.bio-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 19%;
-    border-radius: 90px;
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.container li{
+    list-style: none;
 }
 
 .even-columns {
-    flex: 1 1 0;
-    margin-top: 200px;
+    display: flex;
+    margin:auto;
+    width: 75%;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
+
+.even-columns .bio-pic {
+    width: 25%;
+    border-radius: 180px;
+    border-color: black;
+    border-width: 2px;
+    box-shadow: 8px 11px 17px 0px rgba(0,0,0,0.37); 
+        box-shadow: 8px 11px 17px 0px rgba(0,0,0,0.37);
+}
+
+p {
+    padding: 100px
+}
+
+.even-columns img {
+    border-radius: 20px;
+}
+
+/* .app-container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    gap: 10rem;
+    justify-content: center;
+    top: 15px;
+} */
+
+/*Contact Me Section*/
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+    width: 50%;
 }
 
-.container{
-    display: flex;
+.contact-images {
+    text-align: center;
+}
+
+.contact-images ul li {
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.contact-images img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer */
+h3 {
+    text-align: center;
+    line-height 100px;
 }
