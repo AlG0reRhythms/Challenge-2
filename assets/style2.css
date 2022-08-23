@@ -1,0 +1,140 @@
+/* General styling */
+* {
+    margin: 0;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    margin-top:0;
+    line-height: 60px;
+    width: auto;
+    background-color: rgb(55, 99, 78);
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15rem;
+    list-style: none;
+    text-decoration: ;
+}
+
+.nav-list > li {
+    color: white;
+}
+
+a {
+    text-decoration: none
+}
+.nav-list > li > a:visited {
+    color: white;
+}
+
+/* Main */
+
+section{
+    max-width: 100%;
+    margin:auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#Bio .left-box {
+    width: 33%;
+    border-radius: 360px;
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.172);
+}
+
+/* Flexbox code*/
+
+.even-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.bio-text {
+    width: 40%;
+}
+.even-columns p {
+    width: 30%;
+}
+
+.app-container img {
+    max-width: 50%;
+}
+
+.left-box {
+    flex: 2
+}
+
+.right-box{
+    flex: 2
+}
+
+#Apps img {
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.172);
+    border-radius: 15px;
+}
+
+/* Image affects */
+
+.app.container img:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+/* Contact Me! */
+
+.contact-images {
+    text-align: center;
+}
+
+.contact-images ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-images img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer */
+
+h3 {
+    text-align: center;
+    line-height 100px;
+}
