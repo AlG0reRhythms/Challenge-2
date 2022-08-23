@@ -12,12 +12,15 @@ body {
 /* Header */
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     margin-top:0;
     line-height: 60px;
     width: auto;
     background-color: rgb(55, 99, 78);
+    width: 100%;
+    top: 0rem;
+    z-index: 100;
 }
 
 .nav-list {
@@ -88,6 +91,7 @@ h1 {
 }
 
 .right-box{
+    padding: 50px;
     flex: 2
 }
 
@@ -115,6 +119,17 @@ h1 {
     transition: .5s ease;
     background-color: #008CBA;
 }
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+
 
 /* Contact Me! */
 
