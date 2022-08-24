@@ -23,6 +23,11 @@ header {
     z-index: 100;
 }
 
+main {
+    position: relative;
+    top: 60px;
+}
+
 .nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +134,55 @@ h1 {
     transform: scale(1.1);
 }
 
+/* Comment Box */
+.comment-box {
+    top: 8rem;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.comment-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comment-box input {
+    width:100%;
+    height: 50px;
+    padding: 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 150 px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.comment-box textarea:focus {
+    border: 1px solid black;
+    outline: 0;
+}
+
+.comment-box button {
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+
+.comment-box button:hover {
+    background-color: rgb(55, 99, 78) ;
+}
 
 
 /* Contact Me! */
@@ -153,3 +207,15 @@ h3 {
     text-align: center;
     line-height 100px;
 }
+
+
+@media screen and (max-width: 992px) {
+    .body {
+      width: 50%;}
+    }
+
+@media screen and (max-width: 768px) {
+    .body {
+      width: 100%;}
+}
+  
