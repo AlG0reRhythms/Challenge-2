@@ -50,9 +50,16 @@ a {
 
 /* Main */
 
-section{
+section {
     max-width: 100%;
     margin:auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
 }
 
 h1 {
@@ -75,15 +82,33 @@ h1 {
     flex-wrap: wrap;
     margin:auto;
     width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 15px;
+}
+
+.even-columns-horiseon {
+    display: flex;
+    flex-basis: calc(50% - 1em);
+    flex-wrap: wrap;
+    margin:auto;
+    width: 70%;
+    height: max-content;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
     gap: 15px;
 }
 
+.even-columns-horiseon img {
+    width: 800px;
+    height: auto;
+}
 
 .even-columns {
     display: flex;
+    flex-basis: calc(50% - 1em);
     flex-wrap: wrap;
     margin:auto;
     width: 75%;
@@ -96,13 +121,16 @@ h1 {
 .bio-text {
     width: 40%;
 }
+
 .even-columns p {
     width: 30%;
 }
 
+
 .even-columns:first-child p {
     width: auto;
 }
+
 
 .app-container img {
     max-width: 50%;
@@ -121,6 +149,9 @@ h1 {
     padding: 100px;
     /* flex: 2; */
 }
+.app-container:first-child ul li a{
+    margin: auto;
+}
 
 .right-box:first-child p{
     padding: 5px;
@@ -130,6 +161,13 @@ h1 {
     border: 1px black solid;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.172);
     border-radius: 15px;
+    width: 700px;
+}
+
+#Apps .even-columns-horiseon img{
+    width:800px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 /* Image affects */
