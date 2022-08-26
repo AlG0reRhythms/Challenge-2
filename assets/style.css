@@ -1,103 +1,260 @@
-*{
-    margin:0;
-    padding:0;
-    width: auto;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* General styling */
+* {
+    margin: 0;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    margin: 0px;
+    padding: 0px;
     font-size: 25px;
 }
+/* Header */
 
-header{
-    width: 100%;
-    height: 50px;
-    background-color: rgb(55, 92, 69);
+header {
     position: fixed;
-}
-
-
-.nav-list {
-    display: flex;
-    flex: 1 1 0;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 10rem;
-    justify-content: center;
-    position: relative;
-    top: 15px;
-}
-
-.nav-list a:hover{
-    background-color: black;
+    top: 0;
+    margin-top:0;
+    line-height: 60px;
+    width: auto;
+    background-color: rgb(55, 99, 78);
+    width: 100%;
+    top: 0rem;
+    z-index: 100;
 }
 
 main {
-    background-color: rgb(233, 198, 152);
+    position: relative;
+    top: 60px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15rem;
+    list-style: none;
+    text-decoration: ;
+}
+
+.nav-list > li {
+    color: white;
+}
+
+a {
+    text-decoration: none
+}
+.nav-list > li > a:visited {
+    color: white;
+}
+
+/* Main */
+
+section {
+    max-width: 100%;
+    margin:auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
 }
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
+    padding-top:10px;
 }
 
-.nav-list a {
-    color: white;
-    text-decoration: none;
+.left-box-bio {
+    width: 33%;
+    border-radius: 360px;
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.172);
 }
 
-.nav-list a:hover {
-    transform: scale(1.1);
+/* Flexbox code*/
+
+.even-columns-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 15px;
 }
 
+.even-columns-horiseon {
+    display: flex;
+    flex-basis: calc(50% - 1em);
+    flex-wrap: wrap;
+    margin:auto;
+    width: 70%;
+    height: max-content;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 15px;
+}
 
-
-.container li{
-    list-style: none;
+.even-columns-horiseon img {
+    width: 800px;
+    height: auto;
 }
 
 .even-columns {
     display: flex;
+    flex-basis: calc(50% - 1em);
+    flex-wrap: wrap;
     margin:auto;
     width: 75%;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 40px;
+    gap: 15px;
 }
 
-.even-columns .bio-pic {
-    width: 25%;
-    border-radius: 180px;
-    border-color: black;
-    border-width: 2px;
-    box-shadow: 8px 11px 17px 0px rgba(0,0,0,0.37); 
-        box-shadow: 8px 11px 17px 0px rgba(0,0,0,0.37);
+.bio-text {
+    width: 40%;
 }
 
-p {
-    padding: 100px
+.even-columns p {
+    width: 30%;
 }
 
-.even-columns img {
-    border-radius: 20px;
-    
+
+.even-columns:first-child p {
+    width: auto;
 }
 
-/* .app-container {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    gap: 10rem;
-    justify-content: center;
-    top: 15px;
-} */
 
-/*Contact Me Section*/
-
-img {
-    width: 50%;
+.app-container img {
+    max-width: 50%;
 }
+
+.left-box {
+    /* flex: 2; */
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 17%);
+    border-radius: 15px;
+    width: 800px;
+    height:612px;
+}
+
+.right-box{
+    padding: 100px;
+    /* flex: 2; */
+}
+.app-container:first-child ul li a{
+    margin: auto;
+}
+
+.right-box:first-child p{
+    padding: 5px;
+}
+
+#Apps img {
+    border: 1px black solid;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.172);
+    border-radius: 15px;
+    width: 700px;
+}
+
+#Apps .even-columns-horiseon img{
+    width:800px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Image affects */
+
+.app.container img:hover .overlay {
+    opacity: 1;
+}
+
+.app-container ul {
+    padding-top: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+/* Comment Box */
+.comment-box {
+    top: 8rem;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.comment-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comment-box input {
+    width:100%;
+    height: 50px;
+    padding: 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 150 px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.comment-box textarea:focus {
+    border: 1px solid black;
+    outline: 0;
+}
+
+.comment-box button {
+    border: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+.comment-box button:hover {
+    background-color: rgb(55, 99, 78) ;
+}
+
+
+/* Contact Me! */
 
 .contact-images {
     text-align: center;
@@ -106,7 +263,6 @@ img {
 .contact-images ul li {
     display: inline-block;
     margin: 10px;
-    
 }
 
 .contact-images img {
@@ -115,7 +271,27 @@ img {
 }
 
 /* Footer */
+
 h3 {
     text-align: center;
     line-height 100px;
 }
+
+.refactor {
+    background-image: url('../assets/images/Horiseon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+      width: 50%;}
+    }
+
+@media screen and (max-width: 768px) {
+    .body {
+      width: 100%;}
+}
+  
